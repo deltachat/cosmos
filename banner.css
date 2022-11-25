@@ -1,0 +1,43 @@
+.deltachat-banner {
+	padding: 4px;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	background: #f3f3f3;
+	border-top: 1px solid #ccc;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 1;
+}
+
+.deltachat-banner * {
+	color: black !important;
+	margin: 0 5px;
+}
+
+.deltachat-banner a {
+	color: #1e6bb8 !important;
+	text-decoration: none;
+	font-weight: normal;
+	
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+
+	.deltachat-banner {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+}
+
