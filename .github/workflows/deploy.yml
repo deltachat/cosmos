@@ -1,0 +1,28 @@
+name: Deploy main Branch
+
+on:
+  push:
+    branches:
+      - master
+      - new-deployment
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: GuillaumeFalourd/clone-github-repo-action@v2
+      with:
+        owner: 'deltachat'
+        repository: 'cosmos'
+    - name: Upload
+      uses: horochx/deploy-via-scp@1.1.0
+      with:
+        user: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        host: "delta.chat"
+        port: 22
+        local: "cosmos"
+        remote: "/var/www/html/"
+
