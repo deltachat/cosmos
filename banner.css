@@ -1,6 +1,4 @@
 .deltachat-banner {
-	padding: 4px;
-
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -15,6 +13,9 @@
 	align-items: center;
 
 	z-index: 1;
+	
+	font-family: 'Lucida Grande', sans-serif;
+	font-size: 10pt;
 }
 
 .deltachat-banner * {
