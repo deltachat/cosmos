@@ -19,11 +19,13 @@ body {
   padding: 0px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #000;
-  color: #bbbbbb;
+  color: #888;
+  font-size: 14px;
+  font-weight: light;
 }
 a:visited, a:active, a:link {
   text-decoration: none;
-  color: white;
+  color: #bbb;
 }
 a:hover {
   color: yellow;
@@ -38,22 +40,28 @@ a:hover {
   overflow: hidden;
 }
 #info {
-  width: 450px;
+  width: 50%;
+  min-width: 350px;
+  max-width: 600px;
   margin-top:120px;
+  margin-bottom:120px;
   margin-left:auto;
   margin-right:auto;
   background-color: rgba(180, 180, 180, 0.2);
-  padding: 60px;
+  padding: 30px;
 }
 #info h3 {
   font-size: 28px;
   font-weight: lighter;
   line-height: 36px;
   text-shadow: rgba(0, 0, 0, 1) 0px 1px 0px;
+  color: #bbb;
 }
-.bigText {
-  font-size: 16px;
-  line-height: 24px;
+th {
+  border-bottom: 1px solid #888;
+  color: #bbb;
+  padding-top: 2em;
+  font-weight: light;
 }
 </style>
 
@@ -68,11 +76,11 @@ a:hover {
 <div id="info">
 
 <h3 class="title">
-  <img src="https://delta.chat/assets/logos/delta-chat.svg" height="30" width="30" aria-hidden="true" />
+  <img src="https://delta.chat/assets/logos/delta-chat.svg" height="24" width="24" aria-hidden="true" />
   <span>DeltaChat Cosmos</span>
 </h3>
 
-<table>
+<table width="100%">
 
 <!-- <thead><tr>
   <th>name</th>
@@ -83,79 +91,73 @@ a:hover {
 <!-- MESSENGER -->
 
 <tr>
-  <th colspan="3">messenger</th>
+  <th colspan="3">Messenger</th>
 </tr>
 <tr>
-  <td>website</td>
+  <td>Website</td>
   <td><a href="https://delta.chat">delta.chat</a></td>
   <td><a href="https://github.com/deltachat/deltachat-pages">deltachat/deltachat-pages</a></td>
 </tr>
 <tr>
-  <td>download</td>
+  <td>Download</td>
   <td><a href="https://get.delta.chat">get.delta.chat</a></td>
   <td></td>
 </tr>
 <tr>
-  <td>invite</td>
+  <td>Invite</td>
   <td><a href="https://invite.delta.chat">invite.delta.chat</a></td>
   <td><a href="https://github.com/deltachat/invite">deltachat/invite</a></td>
 </tr>
 <tr>
-  <td>provider database</td>
+  <td>Providers</td>
   <td><a href="https://providers.delta.chat">providers.delta.chat</a></td>
   <td><a href="https://github.com/deltachat/provider-db">deltachat/provider-db</a></td>
 </tr>
 <tr>
-  <td colspan="3"><a href="https://www.youtube-nocookie.com/embed/8LbrGXKZN70">screencast — use without installing other apps</a></td>
+  <td colspan="3" align="center"><a href="https://www.youtube-nocookie.com/embed/8LbrGXKZN70"><i>Screencast — Use without installing other apps</i></a></td>
 </tr>
 
 <!-- WEBXDC -->
 
 <tr>
-  <th colspan="3"><a href="https://github.com/webxdc">webxdc</a></th>
+  <th colspan="3"><a href="https://github.com/webxdc">Webxdc</a></th>
 </tr>
 <tr>
-  <td>website</td>
+  <td>Website</td>
   <td><a href="https://webxdc.org">webxdc.org</a></td>
   <td><a href="https://github.com/webxdc/website">webxdc/website</a></td>
 </tr>
 <tr>
-  <td>docs</td>
+  <td>Docs</td>
   <td><a href="https://docs.webxdc.org">docs.webxdc.org</a></td>
   <td><a href="https://github.com/webxdc/webxdc_docs">webxdc/webxdc_docs</a></td>
 </tr>
 <tr>
-  <td colspan="3"><a href="https://github.com/orgs/webxdc/repositories?type=all">existing apps</a></td>
+  <td>Examples</td>
+  <td><a href="https://github.com/webxdc/hello">hello world</a></td>
+  <td><a href="https://github.com/orgs/webxdc/repositories?type=all">all</a></td>
 </tr>
 <tr>
-  <td>hello world</td>
-  <td></td>
-  <td><a href="https://github.com/webxdc/hello">webxdc/hello</a></td>
-</tr>
-<tr>
-  <td colspan="3"><a href="https://www.youtube-nocookie.com/embed/I1K4pBvb2pI">screencast — just web apps</a></td>
+  <td colspan="3" align="center"><a href="https://www.youtube-nocookie.com/embed/I1K4pBvb2pI"><i>Screencast — Just Web Apps</i></a></td>
 </tr>
 
 <!-- BOTS -->
 
 <tr>
-  <th colspan="3"><a href="https://github.com/deltachat-bot">bots</a></th>
+  <th colspan="3"><a href="https://github.com/deltachat-bot">Bots</a></th>
 </tr>
 <tr>
-  <td>website</td>
+  <td>Website</td>
   <td><a href="https://bots.delta.chat">bots.delta.chat</a></td>
   <td><a href="https://github.com/deltachat-bot/bot-pages">deltachat-bot/bot-pages</a></td>
 </tr>
 <tr>
-  <td>echo bot</td>
-  <td></td>
-  <td><a href="https://github.com/deltachat-bot/echo">deltachat-bot/echo</a></td>
+  <td>Examples</td>
+  <td><a href="https://github.com/deltachat-bot/echo">echo</a></td>
+  <td><a href="https://support.delta.chat/c/bots/">all</a></td>
 </tr>
 <tr>
-  <td colspan="3"><a href="https://support.delta.chat/c/bots/">example bots</a></td>
-</tr>
-<tr>
-  <td>mailadm</td>
+  <td>Mailadm</td>
   <td><a href="https://mailadm.readthedocs.io/">mailadm</a></td>
   <td><a href="https://github.com/deltachat/mailadm">deltachat/mailadm</a></td>
 </tr>
@@ -163,10 +165,10 @@ a:hover {
 <!-- CLIENTS -->
 
 <tr>
-  <th colspan="3">clients</th>
+  <th colspan="3">Clients</th>
 </tr>
 <tr>
-  <td>android</td>
+  <td>Android</td>
   <td><a href="https://play.google.com/store/apps/details?id=chat.delta">Google Play</a></td>
   <td><a href="https://github.com/deltachat/deltachat-android">deltachat/deltachat-android</a></td>
 </tr>
@@ -176,12 +178,12 @@ a:hover {
   <td><a href="https://github.com/deltachat/deltachat-ios">deltachat/deltachat-ios</a></td>
 </tr>
 <tr>
-  <td>desktop</td>
+  <td>Desktop</td>
   <td></td>
   <td><a href="https://github.com/deltachat/deltachat-desktop">deltachat/deltachat-desktop</a></td>
 </tr>
 <tr>
-  <td>interface</td>
+  <td>Interface</td>
   <td></td>
   <td><a href="https://github.com/deltachat/interface">deltachat/interface</a></td>
 </tr>
@@ -215,7 +217,7 @@ a:hover {
 <!-- STANDARDS -->
 
 <tr>
-  <th colspan="3">standards</th>
+  <th colspan="3">Standards</th>
 </tr>
 <tr>
   <td>Autocrypt</td>
@@ -223,32 +225,33 @@ a:hover {
   <td><a href="https://github.com/autocrypt/autocrypt">autocrypt/autocrypt</a></td>
 </tr>
 <tr>
-  <td>verified contacts/groups</td>
-  <td><a href="https://countermitm.readthedocs.io/">countermitm.readthedocs.io</a></td>
+  <td>Verification</td>
+  <td><a href="https://countermitm.readthedocs.io/">countermitm</a></td>
   <td><a href="https://github.com/nextleap-project/countermitm">nextleap-project/countermitm</a></td>
 </tr>
 <tr>
-  <td>others</td>
+  <td>Other</td>
   <td></td>
   <td><a href="https://github.com/deltachat/deltachat-core-rust/blob/master/standards.md">standards.md</a></td>
 </tr>
 
+<tr>
+  <th colspan="3">Misc.</th>
+</tr>
+<tr>
+  <td colspan="3">
+    <a href="https://chaos.social/@delta">Mastodon</a>,
+    <a href="https://twitter.com/delta_chat">Twitter</a>,
+    <a href="https://www.youtube.com/@deltachat/videos">YouTube</a>,
+    <a href="https://support.delta.chat">Forum</a>,
+    <a href="https://web.libera.chat/#deltachat">IRC</a>,
+    <a href="https://www.transifex.com/delta-chat/public/">Translation</a>,
+    <a href="https://delta.chat/en/contribute#donate-money">Donations</a><br><br>
+    <a href="https://github.com/deltachat/cosmos/edit/master/index.html">Edit this</a>
+  </td>
+<tr>
+
 </table>
-
-<hr>
-
-<h2>on the web</h2>
-<ul>
-<li><a href="https://chaos.social/@delta">mastodon</a></li>
-<li><a href="https://twitter.com/delta_chat">twitter</a></li>
-<li><a href="https://www.youtube.com/@deltachat/videos">youtube</a></li>
-<li><a href="https://support.delta.chat">forum</a></li>
-<li><a href="https://web.libera.chat/#deltachat">IRC chat</a></li>
-<li><a href="https://www.transifex.com/delta-chat/public/">translation</a></li>
-<li><a href="https://delta.chat/en/contribute#donate-money">donations</a></li>
-</ul>
-
-<small><a href="https://github.com/deltachat/cosmos/edit/master/index.html">Edit this</a></small>
 
 </div>
 
