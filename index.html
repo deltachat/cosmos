@@ -274,6 +274,8 @@ th a {
 <script>
 		var container = document.getElementById('container');
 		var starfield = new Starfield();
+		starfield.stars = parseInt(window.innerWidth*window.innerHeight / 8000);
+		document.write(starfield.stars)
 		starfield.initialise(container);
 		starfield.start();
 </script>
