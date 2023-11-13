@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	<a href="https://bots.delta.chat">bots</a>
 	 &middot; 
 	<a href="https://cosmos.delta.chat">cosmos</a>
-</div>`;
+</div><link rel="stylesheet" type="text/css" href="./banner.css">`;
 	document.body.style.paddingBottom = document.querySelector('.deltachat-banner').getBoundingClientRect().height + 'px'
 });
