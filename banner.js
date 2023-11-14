@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	target.innerHTML = `<div class="deltachat-banner" lang="en">
 	<a href="https://delta.chat">deltachat</a>
 	 &middot; 
-	<a href="https://webxdc.org">webxdc</a>
+	<a href="https://webxdc.org">webxdc apps</a>
 	 &middot; 
 	<a href="https://bots.delta.chat">bots</a>
 	 &middot; 
