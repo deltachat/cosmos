@@ -9,8 +9,8 @@ function Starfield() {
   this.canvas = null;
   this.width = 0;
   this.height = 0;
-  this.minVelocity = 30;
-  this.maxVelocity = 50;
+  this.minVelocity = 2;
+  this.maxVelocity = 5;
   this.stars = 100;
   this.intervalId = 0;
 }
@@ -60,8 +60,8 @@ Starfield.prototype.start = function () {
     self.draw();
   }, 1000 / this.fps);
 
-  // Skip 500 frames so stars start in random places.
-  for (var i = 0; i < 500; i++) {
+  // Skip 10000 frames so stars start in random places.
+  for (var i = 0; i < 10000; i++) {
     self.update();
   }
 };
