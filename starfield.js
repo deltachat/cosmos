@@ -113,8 +113,8 @@ Starfield.prototype.draw = function () {
     var relX = Math.abs((2 * x) / this.width) ** 1.2;
     var relY = Math.abs((2 * y) / this.height) ** 1.2;
     ctx.fillStyle = `rgb(
-        ${Math.floor(relX * 255)},
-        ${Math.floor(relY * 255)},
+        ${Math.floor(relX * 200)},
+        ${Math.floor(relY * 200)},
         10)`;
     ctx.fillRect(
       this.canvas.width * 0.5 + x,
